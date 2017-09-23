@@ -28,6 +28,7 @@ const Root = () => (
             <div>
                 <Route path="/login" component={Login}/>
                 <Route path="/app/home" component={Home} history={customHistory}/>
+                <Redirect from='/' to="/login"/>
             </div>
         </Router>
     </MuiThemeProvider>
